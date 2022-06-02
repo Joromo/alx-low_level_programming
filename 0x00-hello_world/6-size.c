@@ -11,7 +11,7 @@ int main(void)
 	long long int llitype;
 	float ftype;
 	printf("Size of a char: %zu byte(s)\n", sizeof(ctype));
-	printf("Size of a int: %zu byte(s)\n", sizeof(itype));
+	printf("Size of an int: %zu byte(s)\n", sizeof(itype));
 	printf("Size of a long int: %zu byte(s)\n", sizeof(litype));
 	printf("Size of a long long int: %zu byte(s)\n", sizeof(llitype));
 	printf("Size of a float: %zu byte(s)\n", sizeof(ftype));
