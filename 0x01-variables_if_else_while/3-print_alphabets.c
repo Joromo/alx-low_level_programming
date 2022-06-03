@@ -11,11 +11,12 @@ int main(void)
 	/* */
 	for (U = 'A'; U <= 'Z'; U++)
 	{
-		for (L == 'a'; L <= 'z'; L++)
+		for (L = 'a'; L <= 'z'; L++)
 		{
 			putchar(L);
 		}
-		putchar(U);
+		putchar(U);		
 	}
+	putchar('\n');
 	return (0);
 }
