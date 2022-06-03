@@ -23,7 +23,7 @@ int main(void)
 	}
 	else
 	{
-		printf("negative")
+		printf("negative");
 	}
 	return (0);
 }
