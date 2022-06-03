@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 /* This program assigns a random number to variable n each time its executed.*/
 
