@@ -9,16 +9,19 @@ int main(void)
 	int a;
 	int j;
 	/* */
-	for (a = 0; a < 10; a++)
+	for (a = 0; a <= 8; a++)
 	{
-		for (j = 0; j < a; j++)
+		for (j = 1; j <= 9; ++j)
 		{
-			putchar('0' + j);
-			putchar('0' + a);
-			if (j != 8 || a != 9)
+			if (j > a)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar('0' + a);
+				putchar('0' + j);
+				if (j != 9 || a != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
