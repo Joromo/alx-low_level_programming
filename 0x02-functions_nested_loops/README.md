@@ -11,6 +11,9 @@
 3. islower
 	Write a function that checks for lowercase character.
 	Prototype: int _islower(int c);Returns 1 if c is lowercaseReturns 0 otherwise
+4. isalpha
+	Write a function that checks for alphabetic character.
+	Prototype: int _isalpha(int c);
 
 
 
