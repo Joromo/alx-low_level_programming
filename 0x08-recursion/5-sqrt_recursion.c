@@ -9,14 +9,8 @@ int _sqrt_recursion(int n)
 {
 	int k = 0;
 	/* */
-	if (n == 1)
-		return (1);
-	else if (n == 0)
-		return (0);
-	else if (k * k == n)
-	{
+	if (k * k == n)
 		return (k);
-	}
 	else if (k * k != n)
 		return (-1);
 	return (_sqrt_recursion(n));
