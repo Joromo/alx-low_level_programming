@@ -10,7 +10,7 @@ int CheckIfSquare(int a, int b)
 {
 	if (a * a == b)
 		return (a);
-	if (a * a != b)
+	if (a * a > b)
 		return (-1);
 	return (CheckIfSquare(a + 1, b));
 }
