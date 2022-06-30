@@ -4,8 +4,8 @@
 #include <limits.h>
 /**
 * *malloc_checked- allocates memory using
-* @b: int to be checked
-* Return: NULl
+* @b: memmory to allocate
+* Return: 98 if null  and return pointer to memory
 */
 void *malloc_checked(unsigned int b)
 {
