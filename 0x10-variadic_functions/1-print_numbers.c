@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <stdio.h>
 #include "variadic_functions.h"
 /**
 * print_numbers- prints numbers, followed by a new line.
@@ -24,14 +22,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 	va_end(lt);
-}
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_numbers(", ", 4, 0, 98, -1024, 402);
-    return (0);
 }
