@@ -2,14 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "variadic_functions.h"
-
-
 /**
 * sum_them_all-  that returns the sum of all its parameters
 * @n:constant interger that will be added to other
 * Return: 0 if If n == 0, else return sum of all int
-*
-*
 */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -24,9 +20,9 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	}
 	for (i = 0; i < n; i++)
-		{
-			sum += va_arg(lt, int);
-		}
+	{
+		sum += va_arg(lt, int);
+	}
 	va_end(lt);
 	return (sum);
 }
