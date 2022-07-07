@@ -12,24 +12,21 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list lt;
-	unsigned int i, sum;
+	unsigned int i;
+	int sum = 0;
 	/* */
 	va_start(lt, n);
 	/* */
-	sum = 0;
 	if (n == 0)
 	{
 		return (0);
 	}
-	else
-	{
-		for (i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 		{
 			sum += va_arg(lt, int);
 		}
-		va_end(lt);
-		return (sum);
-	}
+	va_end(lt);
+	return (sum);
 }
 /**
 * main- our main function
@@ -39,7 +36,7 @@ int main(void)
 {
 	int sum;
 	/* */
-	sum = sum_them_all(2, 98, 1024);
+	sum = sum_them_all(0, 98, 1024, 402, -1024);
 	printf("%d ", sum);
 	return (0);
 }
