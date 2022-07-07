@@ -3,28 +3,28 @@
 #include <stdlib.h>
 #include "variadic_functions.h"
 /**
-* sum_them_all-  that returns the sum of all its parameters
-* @n:constant interger that will be added to other
-* Return: 0 if If n == 0, else return sum of all int
+* print_numbers- prints numbers, followed by a new line.
+* @separator: is the string to be printed between numbers
+* @n: the number of integers passed to the function
+* Return:Null
 */
-int sum_them_all(const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list lt;
 	unsigned int i;
-	int sum = 0;
+	int num;
 	/* */
 	va_start(lt, n);
 	/* */
-	if (n == 0)
-	{
-		return (0);
-	}
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(lt, int);
+		num += va_arg(lt, int);
+		printf("%d", num);
+		if (i < n - 1 && separator)
+			printf("%d ", separator);
 	}
+	printf("\n");
 	va_end(lt);
-	return (sum);
 }
 /**
 * main- our main function
