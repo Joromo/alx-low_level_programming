@@ -12,6 +12,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list lt;
 	unsigned int i;
 	int num;
+	char *separator = "";
 	/* */
 	va_start(lt, n);
 	/* */
