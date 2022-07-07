@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stdio.h>
 /**
 * sum_them_all-  that returns the sum of all its parameters
 * @n:constant interger that will be added to other
@@ -11,7 +12,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list lt;
-	int i, sum;
+	unsigned int i, sum;
 	/* */
 	va_start(lt, n);
 	/* */
@@ -26,7 +27,19 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			sum += va_arg(lt, int);
 		}
-		va_end(ap);
+		va_end(lt);
 		return (sum);
 	}
+}
+/**
+* main- our main function
+* Return: 0 on succesful execution
+*/
+int main(void)
+{
+	int sum;
+	/* */
+	sum = sum_them_all(2, 98, 1024);
+	printf("%d ", sum);
+	return (0);
 }
